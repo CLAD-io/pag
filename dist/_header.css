@@ -116,7 +116,6 @@ img {
 
 .slider-animado-img:hover {
   animation-play-state: paused;
-  opacity: 0.7;
 }
 
 @keyframes slider {
