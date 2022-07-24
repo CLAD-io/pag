@@ -1,0 +1,137 @@
+header {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  background-image: url("../img/logoPNG.png");
+  background-color: #000000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+  bottom: 50px;
+}
+
+.menu_logo {
+  background-image: url("../img/menu.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 50px;
+  top: 0px;
+  left: 20px;
+  position: absolute;
+  display: none;
+}
+
+h1 {
+  color: #000000;
+  src: url(/dist/Farro-Light.ttf);
+  font-family: "Farro", sans-serif;
+  height: auto;
+}
+
+.items {
+  display: flex;
+  min-width: 340px;
+  width: 100vw;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.item-link {
+  margin-top: 20px;
+  text-decoration: none;
+  src: url(/dist/Farro-Light.ttf);
+  font-family: "Farro", sans-serif;
+  color: #000000;
+  font-weight: bolder;
+}
+
+main {
+  position: relative;
+}
+
+.label1 img {
+  width: 30px;
+  position: relative;
+  top: 90px;
+  left: 70px;
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+.label2 img {
+  width: 30px;
+  position: relative;
+  top: 160px;
+  left: 0px;
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+.label3 img {
+  width: 30px;
+  position: relative;
+  top: 240px;
+  left: 70px;
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+.miniatura {
+  position: absolute;
+  top: 120px;
+}
+
+.slider-animado {
+  width: 450px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-animado-img {
+  display: flex;
+  animation-name: slider;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+img {
+  position: relative;
+  width: 500px;
+  top: -10px;
+  object-fit: cover;
+}
+
+.miniatura:checked ~ .slider-animado .slider-animado-img {
+  animation: none;
+  transform: translateX(-500px);
+}
+
+.slider-animado-img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+p {
+  src: url(/dist/Farro-Light.ttf);
+  font-family: "Farro", sans-serif;
+  color: red;
+}
+
+.catalogo {
+  margin-top: 130px;
+}

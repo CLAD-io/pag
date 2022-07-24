@@ -1,0 +1,10 @@
+@import '_header';
+
+p {
+    @include fuentePrincipal();
+    color: red;
+}
+
+.catalogo{
+    margin-top: 130px;
+}
