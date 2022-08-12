@@ -69,10 +69,10 @@ p {
 .catalogo-memorias {
   width: 90%;
   display: grid;
-  grid-template-rows: 100px 150px;
+  grid-template-rows: 90px 160px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
-  background-color: rgba(216, 216, 216, 0.295);
+  background-color: rgba(45, 135, 177, 0.322);
   padding: 10px;
   overflow: hidden;
 }
@@ -83,9 +83,10 @@ p {
   grid-column-end: 4;
 }
 .catalogo-memorias p {
-  margin-top: 30px;
+  margin-top: 10px;
   color: aliceblue;
   grid-column: span 2;
+  justify-items: start;
 }
 .catalogo-memorias img {
   justify-self: center;
