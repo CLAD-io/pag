@@ -2,6 +2,10 @@ header {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .logo {
   background-image: url("../img/logoPNG.png");
   background-color: #000000;
@@ -13,37 +17,35 @@ header {
 }
 
 .menu_logo {
-  background-image: url("../img/menu_bar.png");
+  background-image: url("../img/menu.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 90px;
   width: 50px;
-  position: absolute;
-  filter: invert(60%);
   top: 0px;
   left: 20px;
+  position: absolute;
+  display: none;
 }
 
 h1 {
   color: #000000;
   src: url(/dist/Farro-Light.ttf);
   font-family: "Farro", sans-serif;
-  display: none;
   height: auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 12px auto;
-  width: auto;
-  min-width: 350px;
+.items {
   display: flex;
+  min-width: 340px;
+  width: 100vw;
+  margin: auto;
   justify-content: space-around;
 }
 
-a {
+.item-link {
+  margin-top: 20px;
   text-decoration: none;
   src: url(/dist/Farro-Light.ttf);
   font-family: "Farro", sans-serif;
@@ -51,15 +53,6 @@ a {
   font-weight: bolder;
 }
 
-.menu_logo:hover nav {
-  transform: translateY(0px);
-  position: absolute;
-}
-
-h1 {
-  color: #000000;
-}
-
-h1 {
-  font-size: 30px;
+body {
+  background-image: url("../img/62f5bd06aa8b3.jpg");
 }

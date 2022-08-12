@@ -2,9 +2,24 @@
 
 p {
     @include fuentePrincipal();
-    color: red;
 }
 
 .catalogo{
-    margin-top: 130px;
+    border: 2px solid red;
+    margin: 80px 40px 40px 40px;
+    @include fuentePrincipal();
+}
+.catalogo-memorias h1{
+    border-bottom: 2px solid black;
+}
+
+.catalogo-memorias h1 p{
+    margin-top: 70px;
+    border-bottom: 2px solid black;
+
+}
+
+.catalogo-memorias{
+    height: 300px;
+    width: 90%;
 }
