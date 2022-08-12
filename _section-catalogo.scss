@@ -5,21 +5,38 @@ p {
 }
 
 .catalogo{
-    border: 2px solid red;
+    
     margin: 80px 40px 40px 40px;
     @include fuentePrincipal();
-}
-.catalogo-memorias h1{
-    border-bottom: 2px solid black;
-}
-
-.catalogo-memorias h1 p{
-    margin-top: 70px;
-    border-bottom: 2px solid black;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .catalogo-memorias{
-    height: 300px;
+    
     width: 90%;
+    display: grid;
+    grid-template-rows: 100px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: rgba(216, 216, 216, 0.295);
+    padding: 10px;
+    overflow: hidden;
+
+    h1{
+        border-bottom: 2px solid black;
+        color: aliceblue;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    p{
+        margin-top: 30px;
+        color: aliceblue;
+        grid-column: span 2;
+    
+    }
+    img{
+        justify-self: center;
+        padding: 10px;
+    }
 }

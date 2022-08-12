@@ -53,101 +53,41 @@ h1 {
   font-weight: bolder;
 }
 
-main {
-  position: relative;
-}
-
-.label1 img {
-  width: 30px;
-  position: relative;
-  top: 90px;
-  left: 70px;
-  filter: opacity(0.4) drop-shadow(0 0 0 red);
-}
-
-.label2 img {
-  width: 30px;
-  position: relative;
-  top: 160px;
-  left: 0px;
-  filter: opacity(0.4) drop-shadow(0 0 0 red);
-}
-
-.label3 img {
-  width: 30px;
-  position: relative;
-  top: 240px;
-  left: 70px;
-  filter: opacity(0.4) drop-shadow(0 0 0 red);
-}
-
-.miniatura {
-  position: absolute;
-  top: 120px;
-}
-
-.slider-animado {
-  width: 450px;
-  height: 300px;
-  margin: 20px auto;
-  display: flex;
-  overflow: hidden;
-}
-
-.slider-animado-img {
-  display: flex;
-  animation-name: slider;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-img {
-  position: relative;
-  width: 500px;
-  top: -10px;
-  object-fit: cover;
-}
-
-.miniatura:checked ~ .slider-animado .slider-animado-img {
-  animation: none;
-  transform: translateX(-500px);
-}
-
-.slider-animado-img:hover {
-  animation-play-state: paused;
-}
-
-@keyframes slider {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1500px);
-  }
-}
 p {
   src: url(/dist/Farro-Light.ttf);
   font-family: "Farro", sans-serif;
 }
 
 .catalogo {
-  border: 2px solid red;
   margin: 80px 40px 40px 40px;
   src: url(/dist/Farro-Light.ttf);
   font-family: "Farro", sans-serif;
-}
-
-.catalogo-memorias h1 {
-  border-bottom: 2px solid black;
-}
-
-.catalogo-memorias h1 p {
-  margin-top: 70px;
-  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalogo-memorias {
-  height: 300px;
   width: 90%;
+  display: grid;
+  grid-template-rows: 100px 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: rgba(216, 216, 216, 0.295);
+  padding: 10px;
+  overflow: hidden;
+}
+.catalogo-memorias h1 {
+  border-bottom: 2px solid black;
+  color: aliceblue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.catalogo-memorias p {
+  margin-top: 30px;
+  color: aliceblue;
+  grid-column: span 2;
+}
+.catalogo-memorias img {
+  justify-self: center;
+  padding: 10px;
 }
