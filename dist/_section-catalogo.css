@@ -67,14 +67,17 @@ p {
 }
 
 .catalogo-memorias {
-  width: 90%;
+  max-width: 100%;
+  width: 95%;
+  margin: 5px auto;
   display: grid;
-  grid-template-rows: 90px 160px;
+  grid-template-rows: 90px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   background-color: rgba(45, 135, 177, 0.322);
   padding: 10px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .catalogo-memorias h1 {
   border-bottom: 2px solid black;
@@ -89,6 +92,66 @@ p {
   justify-items: start;
 }
 .catalogo-memorias img {
+  justify-self: center;
+  padding: 10px;
+}
+
+.catalogo-procesadores {
+  max-width: 100%;
+  width: 95%;
+  margin: 5px auto;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: rgba(45, 135, 177, 0.322);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.catalogo-procesadores h1 {
+  border-bottom: 2px solid black;
+  color: aliceblue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.catalogo-procesadores p {
+  margin-top: 10px;
+  color: aliceblue;
+  grid-column: span 2;
+  justify-items: start;
+}
+.catalogo-procesadores img {
+  justify-self: center;
+  padding: 10px;
+}
+
+.catalogo-fuentes {
+  max-width: 100%;
+  width: 95%;
+  margin: 5px auto;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: rgba(45, 135, 177, 0.322);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.catalogo-fuentes h1 {
+  border-bottom: 2px solid black;
+  color: aliceblue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.catalogo-fuentes p {
+  margin-top: 10px;
+  color: aliceblue;
+  grid-column: span 2;
+  justify-items: start;
+}
+.catalogo-fuentes img {
   justify-self: center;
   padding: 10px;
 }
